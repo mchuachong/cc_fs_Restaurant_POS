@@ -32,10 +32,8 @@ const handleOnChangeImage = (e) => {
 }
 const handleOnSignUp = async(e) => {
     e.preventDefault()
-    console.log(signUpData)
     try{
     const res = await axios.post(`${BASEURL}/api/auth/signup`,signUpData)
-    console.log(res)
     navigate('/auth/')}
     catch (error) {
         setErrMsg(error.response.data.message)

@@ -17,9 +17,8 @@ const Authentication = () => {
     const handleOnSignIn = async (e) =>{
         e.preventDefault()
         
-        try{console.log(signInData)
+        try{
             const res = await axios.post(`${BASEURL}/api/auth/login`,signInData)
-            console.log(res.data)
             Cookies.set("user_name",res.data.user_name)
             Cookies.set("shop_name",res.data.shop_name)
             Cookies.set("user_image",res.data.user_image)
@@ -47,8 +46,6 @@ const Authentication = () => {
  
     return(
         <>
-        {/* {console.log(JSON.parse(Cookies.get("userInfo")))} */}
-      
         <div className='center' style={{backgroundImage:"linear-gradient(45deg,var(--primary),var(--secondary))",height:"100vh"}}>
             <div className='' style={{fontSize:"2rem",color:"var(--accent)",position:"absolute",left:"2rem",top:"2rem"}}>
                 <div style={{textAlign:"left"}}>
