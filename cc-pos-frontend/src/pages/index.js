@@ -1,0 +1,5 @@
+export {default as Home} from './home.jsx'
+export {default as Authentication} from './auth.jsx'
+export {default as Menu} from './menu.jsx'
+export {default as Tables} from './tables.jsx'
+export {default as SignUpPage} from './signup.jsx'

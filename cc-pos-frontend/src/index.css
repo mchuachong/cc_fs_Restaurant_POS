@@ -1,0 +1,31 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--secondary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/* color scheme 1 */
+  --primary:#222831;
+  --secondary:#393E46;
+  --accent:#00ADB5;
+  --accent2:#EEEEEE;
+  --delete:rgba(249, 67, 67, 0.744);
+  --accentgrad:linear-gradient(#e66465, #9198e5);
+/* color scheme 2 
+--primary: #F9F7F7;
+--secondary:#DBE2EF;
+--accent:#3F72AF;
+--accent2:#112D4E;*/
+/* color scheme 3 
+--primary: #F9F7F7;
+--secondary:#DBE2EF;
+--accent:#3F72AF;
+--accent2:#112D4E;*/
+
+}
