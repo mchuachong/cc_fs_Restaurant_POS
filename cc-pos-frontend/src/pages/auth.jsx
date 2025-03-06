@@ -5,7 +5,7 @@ import {useNavigate} from "react-router"
 import Cookies from 'js-cookie'
 
 
-const BASEURL = "http://localhost:3001"
+let BASEURL = import.meta.env.MODE === "development" ? "http://localhost:3001" : ""
 
 const Authentication = () => {
     const navigate = useNavigate()

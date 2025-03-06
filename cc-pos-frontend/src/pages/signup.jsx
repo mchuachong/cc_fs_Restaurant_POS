@@ -3,7 +3,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-const BASEURL = "http://localhost:3001"
+let BASEURL = import.meta.env.MODE === "development" ? "http://localhost:3001" : ""
 
 function SignupPage() {
 const navigate = useNavigate();
